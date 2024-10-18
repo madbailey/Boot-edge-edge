@@ -15,15 +15,24 @@ cyoAdventure = function (a) {
 }
 
 campaignTrail_temp.questions_json = [
-{
-    "model": "campaign_trail.question",
-    "pk": 42395,
-    "fields": {
-        "priority": 0,
-        "description": "You’re with Chasten, on one of your rare date nights. The restaurant is emptied out, your only company the secret service and the flicker of candlelight that dances between you, casting long shadows on the elegant table set for two. It should feel perfect, but the conversation has been strained, the silence hanging heavy between you. What do you say to break it?\n\n",
-        "likelihood": 1
-    }
-},
+    {
+        "model": "campaign_trail.question",
+        "pk": 42395,
+        "fields": {
+            "priority": 0,
+            "description": "You’re with Chasten, on one of your rare date nights. The restaurant is emptied out, your only company the secret service and the flicker of candlelight that dances between you, casting long shadows on the elegant table set for two. It should feel perfect, but the conversation has been strained, the silence hanging heavy between you. What do you say to break it?\n\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 42402,
+        "fields": {
+            "priority": 0,
+            "description": " Chasten finally sighs, and when he speaks, it’s not with the lightness you are used to hearing. His voice is careful, deliberate, like he’s been holding back something for a long time.\n\n“You know, Pete, there’s so much that’s changed between us. I’m not sure we’ve been on the same page for a while now...”",
+            "likelihood": 1
+        }
+    },
     {
         "model": "campaign_trail.question",
         "pk": 42199,
@@ -134,15 +143,6 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 42288,
-        "fields": {
-            "priority": 0,
-            "description": "Recent intelligence reveals a not-insignificant number of active insurgents are using those old Neuralink chips. Before they were pulled from the market, Elon Musk and his company had cooperated with the NSA to create a backdoor into their encryption. How should we leverage this advantage?\n\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 42289,
         "fields": {
             "priority": 0,
@@ -200,7 +200,7 @@ campaignTrail_temp.questions_json = [
         "pk": 42326,
         "fields": {
             "priority": 0,
-            "description": "As expected, John Fetterman officially declared his candidacy against you for the Democratic Nomination today. With the first primary in South Carolina fast approaching, the question remains whether you should participate in a televised debate. How will you proceed, and if you do, what strategy will you employ?",
+            "description": "As expected, John Fetterman officially declared his candidacy against you for the Democratic Nomination today. With the first primary in South Carolina fast approaching, the question remains whether you should participate in a televised debate. How will you proceed?",
             "likelihood": 1
         }
     },
@@ -224,10 +224,28 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 42390,
+        "pk": 42288,
         "fields": {
             "priority": 0,
             "description": "Recent intelligence reveals a not-insignificant number of active insurgents are using those old Neuralink chips. Before they were pulled from the market, Elon Musk and his company had cooperated with the NSA to create a backdoor into their encryption. How should we leverage this advantage?\n\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 42401,
+        "fields": {
+            "priority": 0,
+            "description": "China, furious after you pressured them to take in North Korean refugees, destabalized their economy with capital controls, and for your general inability to handle the crisis brewing between Türkiye and Israel. Is threatening to pull out of the joint intelligence group your administration set up. This would be a major blow, as it has been essential to identifying foreign support for insurgent groups.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 42407,
+        "fields": {
+            "priority": 0,
+            "description": "After cruising to a solid primary victory, your focus shifts to the general election. Across the aisle, the inevitable has happened—the Republican Convention has anointed Mike Lawler as their nominee. With a smug grin, he moonwalks onto the stage, declaring his mission to 'liberate' America from your so-called tyranny and scrap the JUSTICE Act.",
             "likelihood": 1
         }
     }
@@ -607,7 +625,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42302,
         "fields": {
             "question": 42301,
-            "description": "These people execute homosexuals. I can't allow them to exploit the climate crisis for political gain. We will provide aid directly to Southern Europe."
+            "description": "These people execute homosexuals. I can't allow them to exploit the climate crisis for political gain. We will provide aid directly to Southern Europe. (-4 Budget)"
         }
     },
     {
@@ -623,7 +641,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42304,
         "fields": {
             "question": 42301,
-            "description": "Ukraine is a very poor war-torn country. They don't have leverage. A carrot isn't needed here, but a stick. They are a diplomatic pariah unless the fork over the aid. Simple as."
+            "description": "Ukraine is a very poor war-torn country. They don't have leverage. A carrot isn't needed here, but a stick. They are a diplomatic pariah unless they fork over the aid. This is simple."
         }
     },
     {
@@ -791,7 +809,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42379,
         "fields": {
             "question": 42340,
-            "description": "put description here"
+            "description": "These things happen- there's not jump to any conclusions. Locking things down will make this worse, the biggest shortage here is manpower. We can redeploy the National Guard to help IT teams get systems back online."
         }
     },
     {
@@ -799,7 +817,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42380,
         "fields": {
             "question": 42340,
-            "description": "put description here"
+            "description": "Even if it's not conclusive, if we have intelligence pointing to an attack we can't be too cautious. We need to place some nationwide restrictions on large gatherings and lock things down until things return to normal. "
         }
     },
     {
@@ -807,7 +825,7 @@ campaignTrail_temp.answers_json = [
         "pk": 42381,
         "fields": {
             "question": 42340,
-            "description": "put description here"
+            "description": "We're focusing on the insurgency, rightly perhaps, but what's missing is the corporate angle. This is happening because of years of consolidation of power and market share. We have to drag these execs in front of congress and get some truth on this."
         }
     },
     {
@@ -844,38 +862,6 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 42391,
-        "fields": {
-            "question": 42390,
-            "description": "We have access to their minds. Let’s use it. Heighten their paranoia, make them suspicious of each other. If they start tearing themselves apart from the inside, we won’t even need to lift a finger."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 42392,
-        "fields": {
-            "question": 42390,
-            "description": "Why fight them directly when we can destroy them from within? Push their emotional states into a downward spiral. Depression, hopelessness… let them lose the will to fight. They’ll crumble without ever knowing why."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 42393,
-        "fields": {
-            "question": 42390,
-            "description": "We have the capability to sabotage their chips. If we time it right, a malfunction could… let’s say, remove them from the battlefield permanently. Controlled, precise, and effective."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 42394,
-        "fields": {
-            "question": 42390,
-            "description": "Information is power. Let’s sit back and watch—monitor their every move, their every thought. We’ll know exactly where they are, what they’re planning, and when to strike."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
         "pk": 42396,
         "fields": {
             "question": 42395,
@@ -904,6 +890,78 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 42395,
             "description": "Have you heard anything yet about your mother? It seems like she's going through a tough time- clearly. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42403,
+        "fields": {
+            "question": 42402,
+            "description": "Not on the same page? Is this about the campaign? I know it’s been a lot, but things will settle down soon."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42404,
+        "fields": {
+            "question": 42402,
+            "description": " I don’t understand. I thought we were fixing this. We’re still doing date nights, right? I mean, we’re here, aren’t we?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42405,
+        "fields": {
+            "question": 42402,
+            "description": "Is this about me traveling so much? I promise, I’ll be around more once things calm down."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42406,
+        "fields": {
+            "question": 42402,
+            "description": "I'm sorry- I know, with everything going on with your mom. I should have.."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42410,
+        "fields": {
+            "question": 42407,
+            "description": "He wants to polarize this, villainize me- make this election about Black or White. But he barely won New Hampshire. He was crowned by party apparatchiks. We can use this to divide them come November. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42411,
+        "fields": {
+            "question": 42407,
+            "description": "I've done my duty to tackle this insurgency. I've made hard choices. To guys like Lawler, it's just rhetoric. They Don't Really Care About Us. Without the JUSTICE act. People would have died. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42412,
+        "fields": {
+            "question": 42407,
+            "description": "I've looked at the polling. It's Bad. If this is a \"right track\" vs. \"wrong track\" election- it's over. But if we can make this about who's authentic, about who cares- that's how we win. Chasten, the kids and I should go out on a media blitz. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42413,
+        "fields": {
+            "question": 42407,
+            "description": "This guy- he's one Smooth Criminal. He acts like he's talking to the average suburbanite worried about checkpoints and security measures. But the people who he's signaling to are the white nationalists. He's giving them a green light."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 42414,
+        "fields": {
+            "question": 42401,
+            "description": "put description here"
         }
     }
 ]
@@ -1774,7 +1832,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 41421,
             "issue": 111,
-            "state_issue_score": -0.2,
+            "state_issue_score": 0.3,
             "weight": 2
         }
     },
@@ -6675,7 +6733,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 42337,
         "fields": {
             "answer": 42203,
-            "issue": "110",
+            "issue": 110,
             "issue_score": 0.5,
             "issue_importance": 4
         }
@@ -6705,7 +6763,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 42350,
         "fields": {
             "answer": 42210,
-            "issue": "110",
+            "issue": 110,
             "issue_score": -0.2,
             "issue_importance": 2
         }
@@ -6875,7 +6933,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 42377,
         "fields": {
             "answer": 42221,
-            "issue": "110",
+            "issue": 110,
             "issue_score": -0.3,
             "issue_importance": 2
         }

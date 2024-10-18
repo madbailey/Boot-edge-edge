@@ -6,10 +6,10 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2016,
             "display_year": "2040",
-            "summary": "<div><p>Donald Trump is dead. Bernie Sanders is dead. And now we are all forced to live in the hell they left behind.</p><p>After the 2036 election, Democrats didn't have long to celebrate their fifth consecutive White House victory. The nation snapped. The right-wing terror cells that had been lurking in the shadows came out. In full force. In broad daylight. At a church in Atlanta. President-Elect Raphael Warnock was gunned down. He never even took the oath.</p><p> <b> It. Is. <span class=\"shake\">Happening</span>. </b> Afghanistan- on our doorstep.</p> <p> Now, the presidency falls to Pete Buttigieg, and even his own party doubts he has the strength to lead the nation through this chaos. Lee Zeldin, an obvious insurgency sympathizer barely concealing himself beneath a so-called 'Moderate MAGA' veneer, has a real chance of winning the White House. If Buttigieg is to survive, the mission is clear: unite the party, crush the insurgents, and restore order before the next election.</p> There can be NO doubt about who holds the reigns of power.</p><p><span class=\"fiery-effect\">No more doubters.</span></p></div>",
-            "image_url": "https://d1y822qhq55g6.cloudfront.net/default/_superImage/911_Image_Getty_Web.jpg",
+            "summary": "<div><p>Donald Trump is dead. Bernie Sanders is dead. And now we are all forced to live in the hell they left behind.</p><p>After the 2036 election, Democrats didn't have long to celebrate their fifth consecutive White House victory. The nation snapped. The right-wing terror cells that had been lurking in the shadows came out. In full force. In broad daylight. At a church in Atlanta. President-Elect Raphael Warnock was gunned down. He never even took the oath.</p><p> <b> It. Is. <span class=\"shake\">Happening</span>. </b> Afghanistan- on our doorstep.</p> <p> Now, the presidency falls to Pete Buttigieg, and even his own party doubts he has the strength to lead the nation through this chaos. Mike Lawler, an obvious insurgency sympathizer barely concealing himself beneath a so-called 'Moderate MAGA' veneer, has a real chance of winning the White House. If Buttigieg is to survive, the mission is clear: unite the party, crush the insurgents, and restore order before the next election.</p> There can be NO doubt about who holds the reigns of power.</p><p><span class=\"fiery-effect\">No more doubters.</span></p></div>",
+            "image_url": "https://i.imgur.com/29rSFLb.gif",
             "winning_electoral_vote_number": 272,
-            "advisor_url": "https://i.imgur.com/xIWMzgA.jpeg",
+            "advisor_url": "https://i.imgur.com/vLO0bLb.gif",
             "recommended_reading": "<div style='text-align: center;'><a href='https://2009-2017.state.gov/documents/organization/119629.pdf' class='flashing-text' style='font-size: 20px;'>Official Guide</a></div><style>@keyframes flash { 0% { color: rgb(255, 234, 0); } 33% { color: red; } 66% { color: black; } 100% { color: rgb(236, 244, 15); } } .flashing-text { font-weight: bold; animation: flash 2s infinite; }</style>",
             "has_visits": 1,
             "creator": "Dan Bryan",
@@ -128,7 +128,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#004d80",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://i.postimg.cc/7ZJqgRH1/buttigiegportrait.png",
+            "image_url": "https://i.imgur.com/JpoSL0y.png",
             "electoral_victory_message": "",
             "electoral_loss_message": "",
             "no_electoral_majority_message": "",
@@ -164,8 +164,8 @@ campaignTrail_temp.candidate_json = [
     "model": "campaign_trail.candidate",
     "pk": 41791,
     "fields": {
-        "first_name": "Lee",
-        "last_name": "Zeldin",
+        "first_name": "Mike",
+        "last_name": "Lawler",
         "election": 20,
         "party": "Republican",
         "state": "New Jersey",
@@ -220,7 +220,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#2f2f6a",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://i.postimg.cc/VLwb9Rwp/photo-3.jpg",
+            "image_url": "https://i.imgur.com/nH6CjLF.png",
             "electoral_victory_message": "",
             "electoral_loss_message": "",
             "no_electoral_majority_message": "",
@@ -357,6 +357,8 @@ campaignTrail_temp.opponents_weighted_json = [
     90% { transform: translate(0.5px, 1px) rotate(0deg); }
     100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
+
+
 @keyframes grow-shrink {
   0% { transform: scale(1); }          /* Original size */
   25% { transform: scale(1.05); }      /* Slightly larger */
@@ -376,6 +378,8 @@ campaignTrail_temp.opponents_weighted_json = [
   75% { color: #ffa500; text-shadow: 0 0 4px #ff6347; }
   100% { color: #ff6347; text-shadow: 0 0 3px #ff8c00; }
 }
+
+
 
 .fiery-effect {
 font-weight: bold;
@@ -561,6 +565,11 @@ button:active {
   #election_id_button {
     margin-top: 6em;
 }
+#election_image {
+    height: 11em;
+    float: left;
+    margin: .7em;
+}
 
 #status-bar-container {
     display: flex;
@@ -585,8 +594,9 @@ button:active {
     font-family: 'Agency FB', Arial, sans-serif;
     max-width: 600px;
     margin: 20px auto;
+    padding: 10px auto;
     overflow: hidden;
-    height: 60%;
+    height: auto;
 }
 
 .overlay_window p {
